@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ocean_blue"
+    android:padding="16dp">
+
+    <!-- AI-Genie Chat Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D8D8F6"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/genie_image"
+            android:tint="#8A2BE2"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="AI-Genie chat interface"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Genie Message Box -->
+    <TextView
+        android:id="@+id/genie_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="40dp"
+        android:background="#E6E6E6"
+        android:padding="16dp"
+        android:text="Hi! What kind of trip are you planning ??\nI'll assist you in this process !!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Input Field -->
+    <LinearLayout
+        android:id="@+id/input_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#E6E6F3"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/plus_symbol"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Type your preferences here..."
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="8dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/submit_prompt"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- your business background -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_business"
+    android:padding="12dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<!-- Header -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_genie_white"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StayGenie"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+</LinearLayout>
+
+<!-- Search Bar -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#EAEAEA"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:elevation="3dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:tint="#000000"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="Looking for Business Stays"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+</LinearLayout>
+
+<!-- Features -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:gravity="center">
+
+    <!-- Business District -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏙 Business district"
+        android:backgroundTint="#E0E0FF"
+        android:textColor="#000066"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Rent per Night -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏠 Rent per night"
+        android:backgroundTint="#E0E0FF"
+        android:textColor="#000066"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<!-- Wifi Feature -->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="📶 wifi facility"
+    android:backgroundTint="#E0FFE0"
+    android:textColor="#003300"
+    android:textStyle="bold"
+    android:layout_marginTop="8dp"
+    android:layout_gravity="center_horizontal" />
+
+<!-- Business Hotel Card 1 -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F0F0F0"
+    android:padding="8dp"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/business_stays_one" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <!-- Rating & Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="space_between|center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_star"
+                    android:tint="#FFA500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.5"
+                    android:layout_marginStart="4dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200 per day"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantum business hotel"
+            android:textColor="#330066"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏢 Financial district"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="4dp" />
+</LinearLayout>
+    <!-- Business Hotel Card 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/business_stays_two" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <!-- Rating & Price -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="space_between|center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:tint="#FFA500" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.5"
+                        android:layout_marginStart="4dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$200 per day"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Royal business hotel"
+                android:textColor="#330066"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏢 Financial district"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textColor="#FFFFFF"
+            android:background="#FF0000"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+<!-- AI Genie Bot -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#DCDCDC"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Genie Bot"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="how can i help you ??"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="🎤 Voice box"
+            android:background="#00FF00"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="🧠 Chat"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

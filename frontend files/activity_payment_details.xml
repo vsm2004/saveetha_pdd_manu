@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_payment"
+    android:padding="16dp">
+
+    <!-- Title -->
+<TextView
+android:id="@+id/payment_title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Payment details"
+android:textStyle="bold"
+android:textSize="20sp"
+android:textColor="#000000"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="16dp" />
+
+    <!-- Payment Card Section -->
+<LinearLayout
+android:id="@+id/payment_section"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="#E0E0E0"
+android:layout_below="@id/payment_title"
+android:layout_marginTop="24dp"
+android:padding="16dp"
+android:layout_centerHorizontal="true"
+android:elevation="4dp">
+
+<!-- MODE OF PAYMENT Label -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MODE OF PAYMENT"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:textSize="14sp"
+    android:layout_marginBottom="16dp" />
+
+<!-- Credit/Debit Card Payment -->
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="💳 Credit or debit payment"
+    android:background="#FFEB3B"
+    android:textColor="#000080"
+    android:textStyle="bold"
+    android:layout_marginBottom="12dp" />
+
+<!-- PayPal Payment -->
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="🔵 Paypal Payment"
+    android:background="#D32F2F"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_marginBottom="12dp" />
+
+<!-- UPI Payment -->
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="🟢 UPI Payment"
+    android:background="#00695C"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold" />
+</LinearLayout>
+    </RelativeLayout>

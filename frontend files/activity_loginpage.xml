@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <!-- replace with your actual image name -->
+    android:contentDescription="background"
+    android:alpha="0.8" />
+
+    <!-- Genie Icon + App Name -->
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_image_night" />
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/genie_image"  <!-- your genie logo -->
+        android:contentDescription="Genie Icon"
+        android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StayGenie"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your AI-powered Hotel Companion"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/logo_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tagline"
+        //android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Google Sign-In -->
+    <LinearLayout
+        android:id="@+id/google_signin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_google_button"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/google_logo"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            //android:background="#FFFFFF"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <!-- Terms & Privacy -->
+    <TextView
+        android:id="@+id/terms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By continuing, you agree to our\nterms & personal policy"
+        android:textSize="19sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>

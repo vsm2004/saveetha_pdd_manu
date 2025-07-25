@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coral_reefs"
+    android:padding="16dp">
+
+    <!-- AI-Genie Voicebox Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_box"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:text="🧞 AI-Genie voicebox"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Listening Status Text -->
+    <TextView
+        android:id="@+id/listening_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak now – I'm listening to your preferences"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:layout_marginTop="60dp" />
+
+
+    <!-- Microphone Icon -->
+    <!-- This should be your mic icon inside a purple circle -->
+    <ImageView
+        android:id="@+id/mic_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_mic"
+        android:background="@drawable/ai_voicebox"
+        android:layout_centerInParent="true"
+        android:padding="16dp" />
+
+</RelativeLayout>
