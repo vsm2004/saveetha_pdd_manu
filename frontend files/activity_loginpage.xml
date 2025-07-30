@@ -7,8 +7,7 @@
 
     <!-- Background Image -->
     <!-- replace with your actual image name -->
-    android:contentDescription="background"
-    android:alpha="0.8" />
+
 
     <!-- Genie Icon + App Name -->
 
@@ -21,7 +20,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/hotel_image_night" />
+        android:src="@drawable/stay_rooms" />
 
     <LinearLayout
         android:id="@+id/logo_container"
@@ -34,15 +33,15 @@
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/genie_image"  <!-- your genie logo -->
-        android:contentDescription="Genie Icon"
-        android:layout_marginEnd="8dp"/>
+            android:src="@drawable/genie_image"
+            android:contentDescription="Genie Icon"
+            android:layout_marginEnd="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="StayGenie"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
     </LinearLayout>
@@ -53,8 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your AI-powered Hotel Companion"
-        android:textSize="22sp"
-        android:textColor="@android:color/white"
+        android:textSize="25sp"
         android:layout_below="@id/logo_container"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp" />
@@ -69,8 +67,7 @@
         android:textSize="25sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:layout_below="@id/tagline"
-        //android:backgroundTint="@android:color/white"
+        android:layout_below= "@id/tagline"
         android:textColor="@android:color/black"
         android:background="@drawable/rounded_button" />
 
@@ -89,16 +86,16 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/google_logo"
+            android:src="@drawable/google_login_logo"
             android:layout_marginStart="12dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign in with Google"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
-            //android:background="#FFFFFF"
+            android:textSize="23sp"
+            android:textColor="@android:color/black"
+
             android:layout_marginStart="10dp" />
     </LinearLayout>
 
@@ -107,9 +104,9 @@
         android:id="@+id/terms_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="By continuing, you agree to our\nterms & personal policy"
-        android:textSize="19sp"
-        android:textColor="@android:color/white"
+        android:text="By continuing, you agree to our\nterms and personal policy"
+        android:textSize="22sp"
+        android:textColor="#4B0082"
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
