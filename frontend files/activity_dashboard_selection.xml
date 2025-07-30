@@ -2,20 +2,21 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dim_beach"
+    android:background="@drawable/ocean_shore"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"> <!-- Added margin to lower content -->
 
         <!-- Greeting -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello User"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textColor="#000000"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal" />
@@ -24,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose Your\nTravel Type"
+            android:text="Choose Your Travel Type"
             android:textSize="24sp"
             android:textColor="#CCCCFF"
             android:textStyle="bold"
@@ -36,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select your preferred\ntravel style and let us create\na perfect journey for you"
+            android:text="Select your preferred travel style and let us create\na perfect journey for you"
             android:textSize="16sp"
             android:textColor="#000000"
             android:textStyle="bold"
@@ -66,7 +67,7 @@
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/hotel_interior"
+                    android:src="@drawable/hotel_bookings"
                     android:scaleType="centerCrop"
                     android:contentDescription="Hotels" />
 
@@ -76,7 +77,7 @@
                     android:text="Hotels"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="14dp" />
             </LinearLayout>
 
             <!-- Resorts -->
@@ -89,10 +90,10 @@
 
                 <ImageView
                     android:layout_width="120dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/resorts_interior"
+                    android:layout_height="88dp"
+                    android:contentDescription="Resorts"
                     android:scaleType="centerCrop"
-                    android:contentDescription="Resorts" />
+                    android:src="@drawable/resort_spa_image" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,7 +101,7 @@
                     android:text="Resorts"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="14dp" />
             </LinearLayout>
 
             <!-- Vacation Trip -->
@@ -114,7 +115,7 @@
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/vacation_image"
+                    android:src="@drawable/vacations_image"
                     android:scaleType="centerCrop"
                     android:contentDescription="Vacation Trip" />
 
@@ -124,7 +125,7 @@
                     android:text="Vacation trip"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="14dp" />
             </LinearLayout>
 
             <!-- Business Trip -->
@@ -138,7 +139,7 @@
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/business_hotels"
+                    android:src="@drawable/business_meet_spots"
                     android:scaleType="centerCrop"
                     android:contentDescription="Business Trip" />
 
@@ -148,7 +149,7 @@
                     android:text="Business Trip"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="14dp" />
             </LinearLayout>
 
         </GridLayout>
