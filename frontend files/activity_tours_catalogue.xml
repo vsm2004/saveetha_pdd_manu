@@ -20,7 +20,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_genie_white"
+                android:src="@drawable/genie_purple_image"
                 android:layout_marginEnd="8dp" />
 
             <LinearLayout
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Paradise Tours &Travels"
+                    android:text="Paradise Tours and Travels"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp" />
@@ -226,7 +226,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Heavenly Tours & Travels"
+                    android:text="Heavenly Tours and Travels"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:layout_marginTop="4dp" />
