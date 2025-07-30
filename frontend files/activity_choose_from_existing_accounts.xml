@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StayGenie"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_choose_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an account"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tv_continue_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "to continue to StayGenie"
+            android:textSize="19sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Account 1 -->
+        <LinearLayout
+            android:id="@+id/account_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:padding="12dp"
+            android:background="#DDDDDD"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="A"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:background="#3F00FF"
+                android:textColor="#000000"
+                android:layout_marginRight="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account1"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="account1@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="#000000" />
+
+        <!-- Account 2 -->
+        <LinearLayout
+            android:id="@+id/account_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="#DDDDDD"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="B"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:background="#3F00FF"
+                android:textColor="#000000"
+                android:layout_marginRight="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="account2@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Add Another Account -->
+        <TextView
+            android:id="@+id/tv_add_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add another account"
+            android:textColor="#3F00FF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="48dp" />
+
+    </LinearLayout>
+</ScrollView>
