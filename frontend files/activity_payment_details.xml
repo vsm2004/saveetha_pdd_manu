@@ -2,71 +2,118 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_payment"
     android:padding="16dp">
 
     <!-- Title -->
-<TextView
-android:id="@+id/payment_title"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Payment details"
-android:textStyle="bold"
-android:textSize="20sp"
-android:textColor="#000000"
-android:layout_centerHorizontal="true"
-android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment details"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
     <!-- Payment Card Section -->
-<LinearLayout
-android:id="@+id/payment_section"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical"
-android:background="#E0E0E0"
-android:layout_below="@id/payment_title"
-android:layout_marginTop="24dp"
-android:padding="16dp"
-android:layout_centerHorizontal="true"
-android:elevation="4dp">
+    <LinearLayout
+        android:id="@+id/payment_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E0E0E0"
+        android:layout_below="@id/payment_title"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp">
 
-<!-- MODE OF PAYMENT Label -->
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="MODE OF PAYMENT"
-    android:textStyle="bold"
-    android:textColor="#000000"
-    android:textSize="14sp"
-    android:layout_marginBottom="16dp" />
+        <!-- MODE OF PAYMENT Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODE OF PAYMENT"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
 
-<!-- Credit/Debit Card Payment -->
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="💳 Credit or debit payment"
-    android:background="#FFEB3B"
-    android:textColor="#000080"
-    android:textStyle="bold"
-    android:layout_marginBottom="12dp" />
+        <!-- Credit/Debit Card Payment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFEB3B"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true">
 
-<!-- PayPal Payment -->
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="🔵 Paypal Payment"
-    android:background="#D32F2F"
-    android:textColor="#FFFFFF"
-    android:textStyle="bold"
-    android:layout_marginBottom="12dp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/credit_debit_cards" />
 
-<!-- UPI Payment -->
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="🟢 UPI Payment"
-    android:background="#00695C"
-    android:textColor="#FFFFFF"
-    android:textStyle="bold" />
-</LinearLayout>
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit or debit payment"
+                android:textColor="#000080"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- PayPal Payment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D32F2F"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/visa_card_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visa Card Payment"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- UPI Payment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00695C"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/upi_payments" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI Payment"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
