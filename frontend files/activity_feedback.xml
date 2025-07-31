@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Help us improve your next stay."
-            android:textSize="18sp"
+            android:textSize="21sp"
             android:textColor="#666666"
             android:layout_marginBottom="20dp" />
 
@@ -40,6 +40,7 @@
 
         <!-- Star Rating Row -->
         <LinearLayout
+            android:id="@+id/star_rating_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -49,33 +50,38 @@
             android:layout_marginBottom="20dp">
 
             <ImageView
+                android:id="@+id/star1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/golden_star"
+                android:src="@drawable/star_logo"
                 android:layout_marginHorizontal="6dp" />
 
             <ImageView
+                android:id="@+id/star2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/golden_star"
+                android:src="@drawable/star_logo"
                 android:layout_marginHorizontal="6dp" />
 
             <ImageView
+                android:id="@+id/star3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/golden_star"
+                android:src="@drawable/star_logo"
                 android:layout_marginHorizontal="6dp" />
 
             <ImageView
+                android:id="@+id/star4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/golden_star"
+                android:src="@drawable/star_logo"
                 android:layout_marginHorizontal="6dp" />
 
             <ImageView
+                android:id="@+id/star5"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/golden_star"
+                android:src="@drawable/star_logo"
                 android:layout_marginHorizontal="6dp" />
         </LinearLayout>
 
@@ -85,11 +91,12 @@
             android:layout_height="wrap_content"
             android:text="Select a suitable emoji as mood indicator.."
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="19sp"
             android:layout_marginBottom="8dp" />
 
         <!-- Emoji Row -->
         <LinearLayout
+            android:id="@+id/emoji_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -101,31 +108,41 @@
             android:clipToPadding="false"
             android:layout_gravity="center_horizontal">
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/emoji1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="😡"
                 android:textSize="24sp"
                 android:layout_marginHorizontal="10dp" />
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/emoji2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="😐"
                 android:textSize="24sp"
                 android:layout_marginHorizontal="10dp" />
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/emoji3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🙂"
                 android:textSize="24sp"
                 android:layout_marginHorizontal="10dp" />
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/emoji4"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="😊"
                 android:textSize="24sp"
                 android:layout_marginHorizontal="10dp" />
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/emoji5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🤩"
                 android:textSize="24sp"
@@ -143,6 +160,7 @@
 
         <!-- Feedback Box -->
         <EditText
+            android:id="@+id/feedback_input"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="#E0E0E0"
@@ -156,11 +174,12 @@
 
         <!-- Submit Button -->
         <Button
+            android:id="@+id/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit Feedback"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
             android:background="@drawable/rounded_purple_bg"
             android:padding="12dp"
             android:layout_marginTop="8dp" />
