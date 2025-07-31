@@ -2,9 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_booking"
     android:padding="16dp"
-    android:fillViewport="true"> <!-- Ensures full screen filling -->
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,14 +22,16 @@
             android:layout_marginBottom="16dp" />
 
         <!-- Resort Card -->
+
+        <!-- Room Type Info -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:backgroundTint="#F2F2F2"
-            android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:elevation="4dp">
+            android:background="#F2F2F2"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -41,18 +42,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ocean View Resort & Spa"
-                android:textStyle="bold"
-                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:text="Ocean View Resort and Spa"
                 android:textColor="#000000"
-                android:layout_marginTop="8dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <!-- Rating Row -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="4dp">
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="18dp"
@@ -63,8 +64,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4.5"
                     android:layout_marginStart="4dp"
+                    android:text="4.5"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -72,20 +73,19 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="4dp">
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:src="@drawable/ic_location"
-                    android:tint="#800080" />
+                    android:src="@drawable/location" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Miami Beach, Florida"
                     android:layout_marginStart="4dp"
+                    android:text="Miami Beach, Florida"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -93,10 +93,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
-                android:weightSum="2"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -153,7 +153,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Room Type Info -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -225,7 +224,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tax & Fees: $216"
+                android:text="Tax and Fees: $216"
                 android:textColor="#000000" />
         </LinearLayout>
 
@@ -237,7 +236,8 @@
             android:background="#FFFFFF"
             android:padding="12dp"
             android:elevation="3dp"
-            android:gravity="space_between"> <!-- Not a valid flag, we fix below -->
+            android:gravity="center_vertical"
+            android:weightSum="2">
 
             <TextView
                 android:layout_width="0dp"
